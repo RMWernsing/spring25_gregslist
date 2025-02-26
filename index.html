@@ -42,8 +42,59 @@
         <div class="col-md-6">
           <div class="shadow bg-light px-5 py-2">
             <form>
-              <label for="houseAddress">House Address</label>
-              <input id="houseAddress" type="text">
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="houseAddress">Address</label>
+                <input id="houseAddress" name="address" type="text" required minlength="5" maxlength="75"
+                  placeholder="Address..." class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="houseYear">Year</label>
+                <input id="houseYear" name="year" type="number" required min="1500" max="2025" placeholder="Year..."
+                  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="housePrice">Listed Price</label>
+                <input id="housePrice" name="price" type="number" required min="50000" max="5000000"
+                  placeholder="Price..." class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="houseSquareFootage">Square Footage</label>
+                <input id="houseSquareFootage" name="squareFootage" type="number" required min="0" max="100000"
+                  placeholder="Square Footage..." class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="houseBedrooms">Bedrooms</label>
+                <input id="houseBedrooms" name="bedrooms" type="number" required min="0" max="20"
+                  placeholder="Bedrooms..." class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="houseBathrooms">Bathrooms</label>
+                <input id="houseBathrooms" name="bathrooms" type="number" required min="0" max="20"
+                  placeholder="Bathrooms..." class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default">
+              </div>
+              <select class="form-select mb-3" aria-label="Default select example">
+                <option selected>Is Your Unit Available?</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="houseImgUrl">Image</label>
+                <input id="houseImgUrl" name="imgUrl" type="url" required maxlength="1000" placeholder="Url..."
+                  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="text-end">
+                <button class="btn btn-outline-danger me-2" type="reset">
+                  Reset Form
+                </button>
+                <button class="btn btn-outline-dark" type="submit">
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
