@@ -53,6 +53,8 @@ export class Car {
     return 'This car has a salvaged title designated by <span class="mdi mdi-turkey" title="Salvaged title turkey"></span>'
   }
 
+
+
   get cardHTMLTemplate() {
     return `
      <div class="col-12">
@@ -86,6 +88,8 @@ export class Car {
     `
   }
 }
+
+
 
 // new Car('toyota', 'camry') wack
 // new Car({ make: 'toyota', model: 'camry' }) dope
